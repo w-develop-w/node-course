@@ -4,6 +4,7 @@ const myFavoriteNumber = 77
 
 console.log('Text from the multiple-exports CommoJS module')
 
+// module.exports and export reference the same object in memory  
 module.exports.myName = myName
-module.exports.myHobbies = myHobbies
-module.exports.myFavoriteNumber = myFavoriteNumber
+exports.myHobbies = myHobbies
+exports.myFavoriteNumber = myFavoriteNumber

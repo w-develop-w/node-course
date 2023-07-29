@@ -2,7 +2,7 @@ const exportedOject = require('./multiple-exports')
 const { myName, myHobbies, myFavoriteNumber} = exportedOject
 const { myName: myOtherName, myFriendsName, myGreatHobbies} = require('./export-and-import')
 
-const greeting = require('./single-export')
+const greeting = require('./my-modules/single-export')
 
 // Imports from multiple-exports
 console.log(myName)
@@ -10,7 +10,7 @@ console.log(myHobbies)
 console.log(myFavoriteNumber)
 greeting(myName)
 
-// Import from single-export
+// mutates array in the multiple-exports module!
 myHobbies.push('climbing')
 console.log(myHobbies)
 
